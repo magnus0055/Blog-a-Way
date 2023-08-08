@@ -1,5 +1,6 @@
 import "./write.css";
-import Imgs from "../../components/assets/215.jpg";
+// import Imgs from "../../components/assets/215.jpg";
+// import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import { useContext } from "react";
@@ -40,7 +41,7 @@ export default function Write() {
   //   try {
   //     window.location.replace("/");
   //   } catch (err) {}
-  // };
+  // };  
 
   return (
     <div className="write">
@@ -67,12 +68,14 @@ export default function Write() {
           />
         </div>
         <div className="writeFormGroup">
+          
           <textarea
             placeholder="Tell your Story..."
             type="text"
             className="writeInput writeText"
             onChange={(e) => setDesc(e.target.value)}
           ></textarea>
+          
         </div>
         
         <button className="writeSubmit" type="submit" >
